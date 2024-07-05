@@ -33,7 +33,7 @@ export default function Project() {
             </ul>
           </div>
           <a
-            href="hhttps://github.com/yashpatil17/StackSense"
+            href="https://github.com/yashpatil17/StackSense"
             target="_blank"
             rel="noopener noreferrer"
           >
