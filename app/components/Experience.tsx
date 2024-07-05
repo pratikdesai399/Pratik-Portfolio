@@ -1,136 +1,128 @@
 "use client";
 import React from "react";
-// import { calsans } from "@/fonts/calsans";
 import Image from "next/image";
-import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/components/ui/tracking-beam";
-import tamu from "@/public/tamu.png"
-import tamu_health from "@/public/tamu_health.png"
-import nuance from "@/public/nuance.jpeg"
-
+import tamu from "@/public/tamu.png";
+import tamu_health from "@/public/tamu_health.png";
+import nuance from "@/public/nuance.jpeg";
+import { LuBrainCircuit } from "react-icons/lu";
+import { MdCastForEducation } from "react-icons/md";
 
 export function Experience() {
   return (
-    <TracingBeam className="px-6">
-      <div className="max-w-2xl mx-auto antialiased pt-4 relative">
-        {dummyContent.map((item, index) => (
-          <div key={`content-${index}`} className="mb-10">
-            <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
-              {item.badge}
-            </h2>
-
-            <p>
-              {item.title}
-            </p>
-
-            <div className="text-sm  prose prose-sm dark:prose-invert">
-              {item?.image && (
-                <Image
-                  src={item.image}
-                  alt="blog thumbnail"
-                  height="1000"
-                  width="1000"
-                  className="rounded-lg mb-10 object-cover"
-                />
-              )}
-              {item.description}
+    <div id="experience" className="flex flex-col justify-center items-center">
+      <div className="text-5xl font-bold mb-20">My Experience</div>
+      <TracingBeam className="px-10">
+        <div className="w-full mx-auto antialiased pt-4 relative">
+          {dummyContent.map((item, index) => (
+            <div
+              key={`content-${index}`}
+              className="mb-10 flex flex-col md:flex-row items-center bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:translate-y-2"
+            >
+              <div>
+                <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
+                  {item.badge}
+                </h2>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 mb-2">{item.location}</p>
+                <p className="text-sm text-gray-500 mb-4">{item.date}</p>
+                <div className="text-sm prose prose-sm dark:prose-invert">
+                  {item.description}
+                </div>
+                {item?.image && (
+                  <Image
+                    src={item.image}
+                    alt="experience thumbnail"
+                    height="1000"
+                    width="1000"
+                    className="rounded-lg mt-4 object-cover"
+                  />
+                )}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </TracingBeam>
+          ))}
+        </div>
+      </TracingBeam>
+    </div>
   );
 }
 
 const dummyContent = [
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    badge: "Professional Experience",
+    title: "Student Research Assistant",
+    location: "Texas A&M University, College Station, TX",
+    date: "Aug 2023 – May 2025",
     description: (
       <>
         <p>
-          Sit duis est minim proident non nisi velit non consectetur. Esse
-          adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
-          Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
-          incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
-          fugiat Lorem aute sit ullamco. Qui deserunt non reprehenderit dolore
-          nisi velit exercitation Lorem qui do enim culpa. Aliqua eiusmod in
-          occaecat reprehenderit laborum nostrud fugiat voluptate do Lorem culpa
-          officia sint labore. Tempor consectetur excepteur ut fugiat veniam
-          commodo et labore dolore commodo pariatur.
+          Leading the development of the OliviaKIDS website using Next.js,
+          React.js, TypeScript, Tailwind CSS, Zod, and Zustand, resulting in
+          effective coordination of a cross-functional team and a robust
+          educational platform.
         </p>
         <p>
-          Dolor minim irure ut Lorem proident. Ipsum do pariatur est ad ad
-          veniam in commodo id reprehenderit adipisicing. Proident duis
-          exercitation ad quis ex cupidatat cupidatat occaecat adipisicing.
+          Building a scalable backend infrastructure with Prisma and PostgreSQL,
+          resulting in efficient data management and streamlined data handling.
         </p>
         <p>
-          Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
-          reprehenderit deserunt amet laborum consequat adipisicing officia qui
-          irure id sint adipisicing. Adipisicing fugiat aliqua nulla nostrud.
-          Amet culpa officia aliquip deserunt veniam deserunt officia
-          adipisicing aliquip proident officia sunt.
+          Enhancing development and deployment consistency by leveraging Docker
+          for containerization, resulting in seamless deployment processes and
+          reliable development environments.
         </p>
       </>
     ),
-    badge: "React",
-    image: tamu_health
-    
+    image: tamu_health,
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    badge: "Professional Experience",
+    title: "Software Engineer",
+    location: "Nuance Communications - A Microsoft Company, Pune, India",
+    date: "Jul 2022 – Jul 2023",
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+          Led the development and optimization of a key application feature
+          using Java, JavaScript, and PostgreSQL, resulting in a 20% improvement
+          in user experience.
         </p>
         <p>
-          In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
-          veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
-          reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
-          cillum ut mollit.
+          Implemented microservices architecture, leveraging cloud technologies,
+          reducing deployment time by 16% and enhancing system reliability.
+        </p>
+        <p>
+          Spearheaded the design and implementation of a feature flag service,
+          utilizing Spring Boot, PostgreSQL, and cloud infrastructure, enabling
+          faster feature rollouts and improved application scalability.
         </p>
       </>
     ),
-    badge: "Changelog",
-    image: tamu
+    image: nuance,
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    badge: "Internship Experience",
+    title: "Software Engineering Intern",
+    location: "Nuance Communications - A Microsoft Company, Pune, India",
+    date: "Jun 2021 – Aug 2021",
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+          Optimized data storage efficiency, achieving a 30% reduction in usage
+          through strategic optimization methods using PostgreSQL on cloud
+          infrastructure.
         </p>
-      </>
-    ),
-    badge: "Launch Week",
-    image: nuance
-  },
-  {
-    title: "Lorem Ipsum Dolor Sit Amet",
-    description: (
-      <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+          Led internationalization efforts, enabling support for multiple
+          languages and expanding application reach using cloud-based solutions.
+        </p>
+        <p>
+          Migrated legacy components for Microsoft, resulting in a 23% reduction
+          in system latency.
         </p>
       </>
     ),
-    badge: "Launch Week",
-    image: nuance
+    image: nuance,
   },
 ];

@@ -6,7 +6,7 @@ import { Experience } from './components/Experience'
 
 export default function Home() {
   return (
-    <div>
+    <div className='flex flex-col gap-40'>
       <Hero />
       <About />
       <Experience />

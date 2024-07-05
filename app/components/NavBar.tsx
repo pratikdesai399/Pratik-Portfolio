@@ -14,9 +14,9 @@ export default function NavBar() {
         <div className="text-xl">
             <Link href="#about">About</Link>
         </div>
-        <div className="text-xl">Experience</div>
-        <div className="text-xl">Projects</div>
-        <div className="text-xl">Contact</div>
+        <div className="text-xl"><Link href="#experience">Experience</Link></div>
+        <div className="text-xl"><Link href="#project">Projects</Link></div>
+        <div className="text-xl"><Link href="#contact">Contact</Link></div>
       </div>
     </div>
   );
