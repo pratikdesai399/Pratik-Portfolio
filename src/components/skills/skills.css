@@ -1,5 +1,5 @@
 .skills__container {
-    grid-template-columns: repeat(2, 350px);
+    grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
     justify-content: center;
 }
@@ -9,6 +9,8 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 2rem 4rem;
     border-radius: 1.25rem;
+    width: 100%; /* Make the boxes take full width of the grid column */
+    max-width: 600px; /* Adjust the max-width as needed */
 }
 
 .skills__title {
@@ -20,7 +22,7 @@
 
 .skills__box {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 2.5rem;
 }
 
@@ -53,8 +55,12 @@
 /* BREAK POINTS */
 @media screen and (max-width: 992px) {
    .skills__container {
-    grid-template-columns: max-content;
+    grid-template-columns: 1fr;
     row-gap: 2rem;
+   }
+
+   .skills__content {
+       max-width: 100%; /* Allow full width on smaller screens */
    }
 }
 
@@ -65,6 +71,7 @@
 
     .skills__content {
         padding: 1.5rem;
+        max-width: 100%;
     }
 }
 
