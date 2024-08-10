@@ -25,14 +25,12 @@ const Projects = () => {
   };
 
   return (
-    <div>
+    <div className="projects__section">
       <div className="project__filters">
         {projectsNav.map((item, index) => {
           return (
             <span
-              onClick={(e) => {
-                handleClick(e, index);
-              }}
+              onClick={(e) => handleClick(e, index)}
               className={`${
                 active === index ? "active-project" : ""
               } project__item`}
