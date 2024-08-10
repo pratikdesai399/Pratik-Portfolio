@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.148c4741.css",
+    "main.js": "/static/js/main.2cfcceb5.js",
+    "static/media/about.jpeg": "/static/media/about.b24a2b1c5928decc694f.jpeg",
+    "static/media/profileBW.jpeg": "/static/media/profileBW.b24a2b1c5928decc694f.jpeg",
+    "static/media/Pratik.pdf": "/static/media/Pratik.6137e3222572a7358ba9.pdf",
+    "static/media/project2.webp": "/static/media/project2.fc906070e9796abe3650.webp",
+    "static/media/project3.webp": "/static/media/project3.b094b696f75369270c95.webp",
+    "static/media/project1.webp": "/static/media/project1.f2c54a35bc5d07af37ea.webp",
+    "static/media/woman1.png": "/static/media/woman1.bf207e1501b3e3a89339.png",
+    "static/media/woman2.png": "/static/media/woman2.1badb7321889e9b9ceaf.png",
+    "static/media/man.png": "/static/media/man.58008a565ab6f0db4d93.png",
+    "index.html": "/index.html",
+    "main.148c4741.css.map": "/static/css/main.148c4741.css.map",
+    "main.2cfcceb5.js.map": "/static/js/main.2cfcceb5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.148c4741.css",
+    "static/js/main.2cfcceb5.js"
+  ]
+}
